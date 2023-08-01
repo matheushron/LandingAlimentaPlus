@@ -36,6 +36,7 @@
     /* color:rgb(0, 151, 178); */
 }
 .FreeDemo{
+    font-family: 'Nunito', sans-serif;
     height: 2em;
     position: relative; left: -3em;
     border: none;
@@ -45,13 +46,17 @@
     border-radius: 7px;
 }
 .FreeDemoText{
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     color: white;
 }
 .LoginText{
+    font-family: 'Nunito', sans-serif;
     color:rgb(0, 151, 178);
 }
 .sticky {
+    padding-top: 1em;
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,12 +101,14 @@
     width: 50%;
 }
 .InformationTittle{
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 2em;
     margin-top: 1.5em;
     color: rgb(0, 151, 178);
 }
 .InformationText{
+    font-family: 'Nunito', sans-serif;
     margin-top: 0.5em;
     font-size: 2em;
 }
@@ -122,4 +129,117 @@
 .ThirdInformation{
     background-color: rgb(247, 247, 247);
     display: flex;
+}
+
+.PlansMaintittle{
+    font-size: 3em;
+    margin-top: 2em;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.Plansdescription{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+
+}
+.PlansCards{
+    display: flex;
+    margin-top: 3em;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+}
+.PlansItem{
+    display: flex;
+}
+.IncludeTittle{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.IncludeDescription{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.ItemDescription{
+    font-family: 'Nunito', sans-serif;
+}
+.Price{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 1em;
+}
+.SignButton{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    height: 2em;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 151, 178);
+}
+.FreePlan{
+    border-radius: 10px;
+    padding: 1em;
+    height: auto;
+    margin-left: 19em;
+    width: 25%;
+    background-color: rgb(247, 247, 247);
+
+}
+.PremiumPlan{
+    border-radius: 10px;
+    padding: 1em;
+    height: auto;
+    margin-left: 10em;
+    width: 25%;
+    background-color: rgb(247, 247, 247);
+}
+.PlansCondition{
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 15px;
+}
+.ExplanationVideo{
+    margin-top: 3em;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+}
+.TittleExplanation{
+    font-weight: 900;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.ImageVideo{
+    margin-top: 5em;
+    height: auto;
+    width: 100%;
+}
+.Questions{
+    padding-right: 30%;
+    padding-left: 30%;
+    width: 100%;
+}
+.QuestionsTittle{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.QuestionExemple{
+    display: flex;
+    padding-left: 2em;
+    margin-top:1.5em;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+}
+.TextQuestion{
+    width: 90%;
 }
