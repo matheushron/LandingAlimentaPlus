@@ -1,0 +1,125 @@
+/* rgb(0, 151, 178) cor base do produto */
+/* rgb(240, 240, 240) cor do fundo cinza das imagens */
+
+.head{
+    background-image: url("images/BeginingChanged.jpg");
+    background-position: right center;
+    background-position: right center;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-bottom: 4%;
+    height: 900px;
+    padding-top: 1%;
+    margin-right: auto;
+    margin-left: auto; 
+    background-color: rgba(46, 75, 82, 0);
+    width: 100%;
+
+    /* padding: 10px 16px;
+    background: #555555;
+    color: #f1f1f1; */
+}
+.headerFull{
+    display: flex;
+}
+.WebSiteName{
+    margin-left: 3em;
+    color:rgb(0, 151, 178);
+}
+.LoginArea{
+    height: auto;
+    display: flex;
+    margin-right: 3em;
+    /* color:rgb(0, 151, 178); */
+}
+.FreeDemo{
+    height: 2em;
+    position: relative; left: -3em;
+    border: none;
+    background-color: rgb(0, 151, 178);
+
+    /* border settings */
+    border-radius: 7px;
+}
+.FreeDemoText{
+    text-align: center;
+    color: white;
+}
+.LoginText{
+    color:rgb(0, 151, 178);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+.col{
+    font-weight: 700;
+    text-align: left;
+    color:rgb(0, 151, 178);
+}
+
+.Who{
+    font-size: 30px;
+    margin-top: 1em;
+    font-weight: 700;
+    color: rgb(0, 151, 178);
+    font-family: 'Nunito', sans-serif;
+    padding-right: 30%;
+    padding-left: 30%;
+    text-align: center;
+}
+.WhatDo{
+    font-size: 20px;
+    margin-top: 2em;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.Informations{
+    margin-top: 5em;
+    /* display: flex; */
+}
+.FirstInformation{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    width: 100%;
+}
+.TextFirstInformation{
+    padding-left: 10%;
+    width: 50%;
+}
+.InformationTittle{
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 1.5em;
+    color: rgb(0, 151, 178);
+}
+.InformationText{
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+
+.ImageFirstInformation{
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.SecondInformation{
+    display: flex;
+}
+.TextSecondInformation{
+    padding-right: 10%;
+    width: 50%;
+}
+.ThirdInformation{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+}
