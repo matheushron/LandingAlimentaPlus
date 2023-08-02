@@ -17,11 +17,13 @@
     margin-left: auto; 
     background-color: rgba(46, 75, 82, 0);
     width: 100%;
+    font-size: 25px;
 
     /* padding: 10px 16px;
     background: #555555;
     color: #f1f1f1; */
 }
+
 .headerFull{
     display: flex;
 }
@@ -65,8 +67,9 @@
     padding-top: 102px;
 }
 .col{
+    padding-left: 2em;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     color:rgb(0, 151, 178);
 }
 
@@ -242,4 +245,14 @@
 }
 .TextQuestion{
     width: 90%;
+}
+.MakeDiference{
+    background-color: black;
+    height: 10em;
+    width: 100%;
+}
+.DiferenceText{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: white;
 }
