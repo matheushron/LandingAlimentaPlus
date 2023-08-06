@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;;
+}
+
 /* rgb(0, 151, 178) cor base do produto */
 /* rgb(240, 240, 240) cor do fundo cinza das imagens */
 
 .head{
-    background-image: url("images/BeginingChanged.jpg");
+    position: relative;
+    background-image: url("../images/BeginingChanged.jpg");
     background-position: right center;
     background-position: right center;
     background-position-x: right;
@@ -11,50 +24,81 @@
     background-size: cover;
     box-sizing: border-box;
     padding-bottom: 4%;
-    height: 900px;
-    padding-top: 1%;
+    height: 700px;
     margin-right: auto;
     margin-left: auto; 
     background-color: rgba(46, 75, 82, 0);
     width: 100%;
-    font-size: 25px;
-
+    font-size: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     /* padding: 10px 16px;
     background: #555555;
     color: #f1f1f1; */
 }
 
+.head::before {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .headerFull{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.leftHeaderContainer {
+    display: flex;
+    align-items: center;
+}
+nav {
+    margin: 0 40px;
+
+}
+.nav-item {
+    margin: 0 10px;
+}
+.nav-link {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.nav-link:hover {
+    color: rgb(0, 151, 178);
 }
 .WebSiteName{
-    margin-left: 3em;
     color:rgb(0, 151, 178);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
 }
 .LoginArea{
     height: auto;
     display: flex;
-    margin-right: 3em;
+    align-items: center;
     /* color:rgb(0, 151, 178); */
 }
+.LoginArea a {
+    text-decoration: none;
+}
 .FreeDemo{
-    font-family: 'Nunito', sans-serif;
-    height: 2em;
-    position: relative; left: -3em;
     border: none;
     background-color: rgb(0, 151, 178);
+    text-align: center;
+    color: white;
+    padding: 6px 12px;
+    margin: 0 12px;
 
     /* border settings */
     border-radius: 7px;
 }
-.FreeDemoText{
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    color: white;
-}
 .LoginText{
-    font-family: 'Nunito', sans-serif;
-    color:rgb(0, 151, 178);
+    color: #FFFFFF;
 }
 .sticky {
     padding-top: 1em;
@@ -78,7 +122,6 @@
     margin-top: 1em;
     font-weight: 700;
     color: rgb(0, 151, 178);
-    font-family: 'Nunito', sans-serif;
     padding-right: 30%;
     padding-left: 30%;
     text-align: center;
@@ -86,7 +129,6 @@
 .WhatDo{
     font-size: 20px;
     margin-top: 2em;
-    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
@@ -94,9 +136,14 @@
     margin-top: 5em;
     /* display: flex; */
 }
+.Informations .Info {
+    padding: 40px;
+}
 .FirstInformation{
     background-color: rgb(247, 247, 247);
     display: flex;
+    align-items: center;
+
     width: 100%;
 }
 .TextFirstInformation{
@@ -104,16 +151,14 @@
     width: 50%;
 }
 .InformationTittle{
-    font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 30px;
     margin-top: 1.5em;
     color: rgb(0, 151, 178);
 }
 .InformationText{
-    font-family: 'Nunito', sans-serif;
     margin-top: 0.5em;
-    font-size: 2em;
+    font-size: 20px;
 }
 
 .ImageFirstInformation{
@@ -124,6 +169,7 @@
 
 .SecondInformation{
     display: flex;
+    align-items: center;
 }
 .TextSecondInformation{
     padding-right: 10%;
@@ -132,16 +178,15 @@
 .ThirdInformation{
     background-color: rgb(247, 247, 247);
     display: flex;
+    align-items: center;
 }
 
 .PlansMaintittle{
     font-size: 3em;
     margin-top: 2em;
-    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 .Plansdescription{
-    font-family: 'Nunito', sans-serif;
     text-align: center;
 
 }
@@ -156,23 +201,16 @@
     display: flex;
 }
 .IncludeTittle{
-    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 .IncludeDescription{
-    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
-.ItemDescription{
-    font-family: 'Nunito', sans-serif;
-}
 .Price{
-    font-family: 'Nunito', sans-serif;
     text-align: center;
     margin-top: 1em;
 }
 .SignButton{
-    font-family: 'Nunito', sans-serif;
     color: white;
     height: 2em;
     width: 100%;
@@ -198,7 +236,6 @@
     background-color: rgb(247, 247, 247);
 }
 .PlansCondition{
-    font-family: 'Nunito', sans-serif;
     margin-top: 1em;
     text-align: center;
     font-size: 15px;
@@ -216,7 +253,6 @@
     font-weight: 900;
     padding-right: 20%;
     padding-left: 20%;
-    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 .ImageVideo{
@@ -232,7 +268,6 @@
 .QuestionsTittle{
     margin-top: 2em;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
 }
 .QuestionExemple{
     display: flex;
@@ -253,13 +288,13 @@
     padding-top: 2em;
     padding-bottom: 2em;
     background-color: black;
-    height: 10em;
     width: 100%;
 }
 .DiferenceText{
-    font-family: 'Nunito', sans-serif;
+    margin: 0;
     text-align: center;
     color: white;
+    font-size: 30px;
 }
 .FormArea{
     width: 50%;
@@ -280,21 +315,22 @@
     background: #FFF; 
     width: 70%;
     /* border:none; */
-    border-radius: 7px;
+    padding: 5px 7px;
+    outline: none;
 }
 .UserMessage{
     border-radius: 5px;
     border: 0.5px solid #CCC;
     background: #FFF; 
     width: 70%;
-    height: 6em;
     border-radius: 7px;
+    padding: 5px 7px;
+    outline: none;
 }
 .SenduserDataButton{
     font-weight: 700;
     color: white;
     margin-top: 3em;
-    font-family: 'Nunito', sans-serif;
     width: 6em;
     height: 2em;
     position: relative; left: 13em;
@@ -306,32 +342,29 @@
 }
 .Footer{
     display: flex;
+    justify-content: space-between;
     margin-top: 3em;
-    height: 40px;
     width: 100%;
     background-color: rgb(0, 151, 178);
+    padding: 20px;
 }
 .FolowUs{
-    padding-top: 0.4em;
-    padding-left: 2em;
-    width: 50%;
+    display: flex;
+    align-items: center;
 }
 .FollowUsText{
-    font-family: 'Nunito', sans-serif;
     color: white;
+    margin: 0;
 }
 .SocialMediaIcons{
     display: flex;
-    padding-top: 0.4em;
-    padding-right: 0em;
-    padding-left: 45em;
-    width: 50%;
+    align-items: center;
 }
 .IconsText{
     cursor: pointer;
-    margin-right: 3em;
     color: white;
-    text-align: left;
+    padding: 0 15px;
+    margin: 0;
 }
 .EnterpriseInformation{
     padding-left: 5%;
@@ -342,16 +375,19 @@
     width: 30%;
     margin-top: 3em;
 }
+.AlimentraPlusInfo a {
+    text-decoration: none;
+    color: unset;
+}
 .InfoTittle{
     color: #0097B2;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
 }
 .Rights{
-    font-family: 'Nunito', sans-serif;
     margin-top: 3em;
     text-align: center;
+    font-size: 12px;
 }
