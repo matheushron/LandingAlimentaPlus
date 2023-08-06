@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlimentarPlus</title>
+  <title>Alimentarplus</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/Style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
   <script src="https://kit.fontawesome.com/bba2bd4ff6.js" crossorigin="anonymous"></script>
@@ -24,38 +23,38 @@
   <div class="head" >
     <div class="headerFull" id="myHeader">
 
-      <!-- Nome do site -->
-      <div class="WebSiteName">
-        <p style="font-family: 'Nunito', sans-serif;">Alimentar +</p>
-      </div>
+      <div class="leftHeaderContainer">
 
-      <!-- Opções do site -->
-      <div class="container text-center" style="font-family: 'Nunito', sans-serif;">
-        <div class="row">
-          <div class="col">
-            Inicio
-          </div>
-          <div class="col">
-            Solução
-          </div>
-          <div class="col">
-            planos
-          </div>
-          <div class="col">
-            Sobre
-          </div>
-          <div class="col">
-            Contato
-          </div>
-        </div>
+        <!-- Nome do site -->
+        <a class="WebSiteName" href="#">Alimentar+</a>
+          
+        <!-- Opções do site -->
+        <nav class="navbar navbar-expand-lg">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Solução</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+        </nav>
+        
       </div>
-
+      
       <!-- Login/Experimente -->
       <div class="LoginArea">
-        <button class="FreeDemo">
-          <p class="FreeDemoText">Experimente grátis</p>
-        </button>
-        <p class="LoginText">Login</p>
+        <a class="FreeDemo" href="#">Experimente Grátis</a>
+        <a class="LoginText" href="#">Login</a>
       </div>
 
     </div>
@@ -70,7 +69,7 @@
     </h3>
 
     <p class="WhatDo">
-      Integramos supermecados e ONGs para doação de alimentos ainda bom que seriam descartados, ajudando a fome no Brasil.
+      Integramos supermercados e ONGs para doação de alimentos que seriam descartados, ajudando a combater a fome no Brasil.
     </p>
 
   </div>
@@ -79,7 +78,7 @@
   <!-- Começo das informações com imagens -->
   <div class="Informations">
 
-    <div class="FirstInformation" data-aos="fade-right" data-aos-duration="2000">
+    <div class="FirstInformation Info" data-aos="fade-right" data-aos-duration="2000">
       <div class="TextFirstInformation" >
         <h3 class="InformationTittle">Combate a Fome</h3>
         <p class="InformationText">
@@ -92,13 +91,13 @@
         </p>
       </div>
       <div class="ImageFirstInformation">
-        <img class="InformationImage" src="CSS/images/WolrdImage.jpeg" alt="">
+        <img class="InformationImage" src="images/WolrdImage.jpeg" alt="">
       </div>
     </div>
 
-    <div class="SecondInformation" data-aos="fade-left" data-aos-duration="2000">
+    <div class="SecondInformation Info" data-aos="fade-left" data-aos-duration="2000">
       <div class="ImageFirstInformation">
-        <img class="InformationImage" src="CSS/images/CellphoneImage.png" alt="">
+        <img class="InformationImage" src="images/CellphoneImage.png" alt="">
       </div>
       <div class="TextSecondInformation">
         <h3 class="InformationTittle">A Solução</h3>
@@ -113,7 +112,7 @@
       </div>
     </div>
 
-    <div class="ThirdInformation" data-aos="fade-right" data-aos-duration="2000">
+    <div class="ThirdInformation Info" data-aos="fade-right" data-aos-duration="2000">
       <div class="TextFirstInformation">
         <h3 class="InformationTittle">Quem Somos</h3>
         <p class="InformationText">
@@ -125,7 +124,7 @@
         </p>
       </div>
       <div class="ImageFirstInformation">
-        <img class="InformationImage" src="CSS/images/ImageDuo.jpeg" alt="">
+        <img class="InformationImage" src="images/ImageDuo.jpeg" alt="">
       </div>
     </div>
 
@@ -224,7 +223,7 @@
   <div class="ExplanationVideo">
     <div data-aos="fade-up" data-aos-duration="1000">
       <h2 class="TittleExplanation">Saiba um pouco mais da nossa solução com o video abaixo.</h2>
-      <img class="ImageVideo" src="CSS/images/Video.png" alt="">
+      <img class="ImageVideo" src="images/Video.png" alt="">
     </div>
   </div>
   <!-- Fim do video de explicação -->
@@ -289,7 +288,7 @@
         <input type="text" class="InputData"><br><br>
 
         <label for="">Mensagem</label><br>
-        <input type="text" class="UserMessage"><br>
+        <textarea name="" id="" cols="30" rows="6" class="UserMessage"></textarea><br>
 
         <button class="SenduserDataButton">
           Enviar
@@ -307,17 +306,9 @@
     </div>
 
     <div class="SocialMediaIcons">
-      <p class="IconsText">
-        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-      </p>
-
-      <p class="IconsText">
-        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-      </p>
-
-      <p class="IconsText">
-        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-      </p>
+      <a href="" class="IconsText"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+      <a href="" class="IconsText"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+      <a href="" class="IconsText"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
     </div>
 
   </div>
@@ -336,10 +327,8 @@
 
     <div class="AlimentraPlusInfo">
       <h5 class="InfoTittle">Descubra</h5>
-      <p class="AlimentraPlusInfoDescription">
-        Login<br>
-        Cadastro
-      </p>
+      <a href="">Login</a><br>
+      <a href="">Cadastro</a>
     </div>
 
     <div class="AlimentraPlusInfo">
@@ -363,7 +352,7 @@
 
   
 
-  <script src="Js/main.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
