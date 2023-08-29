@@ -240,6 +240,39 @@ nav {
     text-align: center;
     font-size: 15px;
 }
+.AboutUs{
+    margin-top: 3em;
+    width: 100%;
+    padding-left: 30em;
+    padding-right: 30em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+.AboutUsTittle{
+    text-align: center;
+    color: rgb(0, 151, 178);
+}
+.AboutUsText{
+    margin-top: 3em;
+    text-align: left;
+}
+.AboutUsPhotos{
+    padding-left: 25%;
+    display: flex;
+}
+.PhotoMember{
+
+}
+.Membername{
+    text-align: center;
+
+}
+.MemberPhoto{
+    width: 10em;
+    height: auto;
+    border-radius: 50%;
+}
 .ExplanationVideo{
     margin-top: 3em;
     padding-right: 20%;
