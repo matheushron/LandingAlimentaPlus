@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 1100px){
 
     * {
         margin: 0;
@@ -441,3 +441,466 @@
 
 }
 
+@media only screen and (min-width: 400px){
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Nunito', sans-serif;;
+    }
+    
+    /* rgb(0, 151, 178) cor base do produto */
+    /* rgb(240, 240, 240) cor do fundo cinza das imagens */
+    
+    .head{
+        position: relative;
+        background-image: url("../images/BeginingChanged.jpg");
+        background-position: right center;
+        background-position: right center;
+        background-position-x: right;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-bottom: 4%;
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto; 
+        background-color: rgba(46, 75, 82, 0);
+        width: 100%;
+        /* padding: 10px 16px;
+        background: #555555;
+        color: #f1f1f1; */
+    }
+    
+    .head::before {
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .headerFull{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+        width: 100%;
+    }
+    
+    .leftHeaderContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        margin: 0 40px;
+    
+    }
+    .navbar-nav{
+        display: flex;
+    }
+    .nav-item {
+        display: none;
+        margin: 0 10px;
+    }
+    .nav-link {
+        color: #FFFFFF;
+        font-weight: normal;
+    }
+    .nav-link:hover {
+        color: rgb(0, 151, 178);
+    }
+    .WebSiteName{
+        color:rgb(0, 151, 178);
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .LoginArea{
+        height: auto;
+        display: flex;
+        align-items: center;
+        /* color:rgb(0, 151, 178); */
+    }
+    .LoginArea a {
+        text-decoration: none;
+    }
+    .FreeDemo{
+        border: none;
+        background-color: rgb(0, 151, 178);
+        text-align: center;
+        color: white;
+        padding: 6px 12px;
+        margin: 0 12px;
+    
+        /* border settings */
+        border-radius: 7px;
+    }
+    .LoginText{
+        color: #FFFFFF;
+    }
+    .sticky {
+        padding-top: 1em;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .sticky + .content {
+        padding-top: 102px;
+    }
+    .col{
+        padding-left: 2em;
+        font-weight: 700;
+        text-align: center;
+        color:rgb(0, 151, 178);
+    }
+
+    
+    .Who{
+        font-size: 20px;
+        margin-top: 1em;
+        font-weight: 900;
+        color: rgb(0, 151, 178);
+        /* padding-right: 30%;
+        padding-left: 30%; */
+        text-align: center;
+    }
+    .WhatDo{
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 15px;
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .Informations{
+        margin-top: 5em;
+        /* display: flex; */
+    }
+    .Informations .Info {
+        padding: 40px;
+    }
+    .FirstInformation{
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        align-items: center;
+    
+        width: 100%;
+    }
+    .TextFirstInformation{
+        padding-left: 0%;
+        width: 50%;
+    }
+    .InformationTittle{
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 1.5em;
+        color: rgb(0, 151, 178);
+    }
+    .InformationText{
+        margin-top: 0.5em;
+        font-size: 13px;
+    }
+    
+    .ImageFirstInformation{
+        width: 50%;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .InformationImage{
+        height: auto;
+        width: 100%;
+    }
+    
+    .SecondInformation{
+        display: flex;
+        align-items: center;
+    }
+    .TextSecondInformation{
+        margin-left: 2em;
+        padding-right: 0%;
+        width: 50%;
+    }
+    .ThirdInformation{
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        align-items: center;
+    }
+    
+    .PlansTittle{
+        margin-left: 5%;
+    }
+
+    .PlansMaintittle{
+        font-size: 3em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .Plansdescription{
+        text-align: center;
+    
+    }
+    .PlansCards{
+        width: 100%;
+        display: flex;
+        margin-top: 3em;
+        padding-right: 0%;
+        padding-left: 0%;
+        
+    }
+    .PlansItem{
+        font-size: 15px;
+        display: flex;
+    }
+    .IncludeTittle{
+        text-align: center;
+    }
+    .IncludeDescription{
+        text-align: center;
+    }
+    .Price{
+        text-align: center;
+        margin-top: 1em;
+    }
+    .SignButton{
+        margin-left: 25%;
+        color: white;
+        height: 2em;
+        width: 50%;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(0, 151, 178);
+    }
+    .FreePlan{
+        padding: 1em;
+        /* padding-top: 1em;
+        padding-left: 2em; */
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(247, 247, 247);
+        /* border-radius: 10px;
+        padding: 1em;
+        height: auto;
+        margin-left: 19em;
+        width: 100%;
+        background-color: rgb(247, 247, 247); */
+    
+    }
+    .PremiumPlan{
+        padding: 1em;
+        /* padding-top: 1em;
+        padding-left: 2em; */
+        border-radius: 10px;
+        background-color: rgb(247, 247, 247);
+        /* border-radius: 10px;
+        padding: 1em;
+        height: auto;
+        margin-left: 10%;
+        width: 100%;
+        background-color: rgb(247, 247, 247); */
+    }
+    .PlansCondition{
+        margin-top: 1em;
+        text-align: center;
+        font-size: 15px;
+    }
+    .AboutUs{
+        margin-top: 3em;
+        padding-left: 30em;
+        padding-right: 30em;
+        padding-top: 2em;
+        padding-bottom: 0em;
+        text-align: center;
+    }
+    .AboutUsTittle{
+        text-align: center;
+        color: rgb(0, 151, 178);
+    }
+    .AboutUsText{
+        padding-left: 10em;
+        padding-right: 10em;
+        margin-top: 3em;
+        font-size: 15px;
+        margin-top: 2em;
+        text-align: center
+    }
+    .AboutUsPhotos{
+        padding-top: 2em;
+        padding-left: 15%;
+        width: 100%;
+        /* padding-left: 25%; */
+        display: flex;
+    }
+    .PhotoMember{
+    
+    }
+    .Membername{
+        text-align: center;
+    }
+    .MemberPhoto{
+        width: 10em;
+        height: auto;
+        border-radius: 50%;
+    }
+    .ExplanationVideo{
+        margin-top: 3em;
+        padding-right: 20%;
+        padding-left: 25%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: rgb(240, 240, 240);
+        width: 100%;
+    }
+    .TittleExplanation{
+        font-weight: 900;
+        padding-right: 20%;
+        padding-left: 20%;
+        text-align: center;
+    }
+    .ImageVideo{
+        margin-top: 5em;
+        height: auto;
+        width: 100%;
+    }
+    .Questions{
+        padding-right: 30%;
+        padding-left: 30%;
+        width: 100%;
+    }
+    .QuestionsTittle{
+        margin-bottom: 2em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .QuestionExemple{
+        display: flex;
+        padding-left: 2em;
+        margin-top:1.5em;
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+        height: 40px;
+        width: 100%;
+    }
+    .TextQuestion{
+        width: 90%;
+    }
+    .MakeDiference{
+        margin-top: 3em;
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background-color: black;
+        width: 100%;
+    }
+    .DiferenceText{
+        margin: 0;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .FormArea{
+        width: 50%;
+        margin-top: 3em;
+        margin-left: 25%;
+        margin-right: 20%;
+    }
+    .ContactUs{
+        text-align: center;
+    }
+    .UserDatas{
+        margin-top: 2em;
+        margin-left: 25%;
+    }
+    .InputData{
+        border-radius: 5px;
+        border: 0.5px solid #CCC;
+        background: #FFF; 
+        width: 70%;
+        /* border:none; */
+        padding: 5px 7px;
+        outline: none;
+    }
+    .UserMessage{
+        border-radius: 5px;
+        border: 0.5px solid #CCC;
+        background: #FFF; 
+        width: 70%;
+        border-radius: 7px;
+        padding: 5px 7px;
+        outline: none;
+    }
+    .SenduserDataButton{
+        font-weight: 700;
+        color: white;
+        margin-top: 3em;
+        width: 6em;
+        height: 2em;
+        position: relative; left: 8em;
+        border: none;
+        background-color: rgb(0, 151, 178);
+    
+        /* border settings */
+        border-radius: 7px;
+    }
+    .Footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3em;
+        width: 100%;
+        background-color: rgb(0, 151, 178);
+        padding: 20px;
+    }
+    .FolowUs{
+        display: flex;
+        align-items: center;
+    }
+    .FollowUsText{
+        color: white;
+        margin: 0;
+    }
+    .SocialMediaIcons{
+        display: flex;
+        align-items: center;
+    }
+    .IconsText{
+        cursor: pointer;
+        color: white;
+        padding: 0 15px;
+        margin: 0;
+    }
+    .EnterpriseInformation{
+        padding-left: 5%;
+        width: 100%;
+        display: flex;
+    }
+    .AlimentraPlusInfo{
+        width: 30%;
+        margin-top: 3em;
+    }
+    .AlimentraPlusInfo a {
+        text-decoration: none;
+        color: unset;
+    }
+    .InfoTittle{
+        color: #0097B2;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+    }
+    .Rights{
+        margin-top: 3em;
+        text-align: center;
+        font-size: 12px;
+    }
+}
