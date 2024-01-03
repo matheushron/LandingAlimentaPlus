@@ -696,6 +696,10 @@
         border: none;
         background-color: rgb(0, 151, 178);
     }
+    .continueButton{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     .FreePlan{
         border-radius: 10px;
         padding: 1em;
@@ -811,10 +815,6 @@
 }
 
 /* FIM DO ESTILO DA DEMONSTRAÇÃO DO TIME */
-
-
-
-
 
     .AboutUs{
         margin-top: 3em;
