@@ -1,1457 +1,419 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-@media only screen and (min-width: 200px){
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Nunito', sans-serif;;
-    }
-    
-    /* rgb(0, 151, 178) cor base do produto */
-    /* rgb(240, 240, 240) cor do fundo cinza das imagens */
-    
-    .head{
-
-    }
-    
-    .head::before {
-        background-color: #000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .headerFull{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 30px;
-        width: 100%;
-    }
-    
-    .leftHeaderContainer {
-        display: flex;
-        align-items: center;
-    }
-
-    nav {
-        margin: 0 40px;
-    
-    }
-    .navbar-nav{
-        display: flex;
-    }
-    .nav-item {
-        display: none;
-        margin: 0 10px;
-    }
-    .nav-link {
-        color: #FFFFFF;
-        font-weight: normal;
-    }
-    .nav-link:hover {
-        color: rgb(0, 151, 178);
-    }
-    .WebSiteName{
-        color:rgb(0, 151, 178);
-        font-size: 22px;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .LoginArea{
-        height: auto;
-        display: flex;
-        align-items: center;
-        /* color:rgb(0, 151, 178); */
-    }
-    .LoginArea a {
-        text-decoration: none;
-    }
-    .FreeDemo{
-        border: none;
-        background-color: rgb(0, 151, 178);
-        text-align: center;
-        color: white;
-        padding: 6px 12px;
-        margin: 0 12px;
-    
-        /* border settings */
-        border-radius: 7px;
-    }
-    .LoginText{
-        color: #FFFFFF;
-    }
-    .sticky {
-        padding-top: 1em;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .sticky + .content {
-        padding-top: 102px;
-    }
-    .col{
-        padding-left: 2em;
-        font-weight: 700;
-        text-align: center;
-        color:rgb(0, 151, 178);
-    }
-
-    
-    .Who{
-        font-size: 20px;
-        margin-top: 1em;
-        font-weight: 900;
-        color: rgb(0, 151, 178);
-        text-align: center;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .WhatDo{
-        padding-right: 10%;
-        padding-left: 10%;
-        font-size: 15px;
-        margin-top: 1em;
-        text-align: center;
-    }
-    
-    .Informations{
-        margin-top: 5em;
-        /* display: flex; */
-    }
-    .Informations .Info {
-        padding: 40px;
-    }
-    .FirstInformation{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        align-items: center;
-    
-        width: 100%;
-    }
-    .TextFirstInformation{
-        padding-left: 0%;
-        width: 100%;
-    }
-    .InformationTittle{
-        font-weight: 700;
-        font-size: 15px;
-        margin-top: 1.5em;
-        color: rgb(0, 151, 178);
-    }
-    .InformationText{
-        text-align: left;
-        margin-top: 0.5em;
-        font-size: 13px;
-    }
-    
-    .ImageFirstInformation{
-        display: none;
-        width: 0%;
-        padding-left: 10%;
-        padding-right: 5%;
-    }
-
-    .InformationImage{
-        height: auto;
-        width: 100%;
-    }
-    
-    .SecondInformation{
-        display: flex;
-        align-items: center;
-    }
-    .TextSecondInformation{
-        margin-left: 0%;
-        padding-right: 0%;
-        width: 100%;
-    }
-    .ThirdInformation{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        align-items: center;
-    }
-    
-    .PlansTittle{
-        margin-left: 5%;
-    }
-
-    .PlansMaintittle{
-        font-size: 3em;
-        margin-top: 2em;
-        text-align: center;
-    }
-    .Plansdescription{
-        padding-right: 2em;
-        padding-left: 1em;
-        text-align: center;
-    
-    }
-    .PlansCards{
-        width: 100%;
-        display: flex;
-        margin-top: 3em;
-        padding-right: 0%;
-        padding-left: 0%;
-        
-    }
-    .PlansItem{
-        font-size: 15px;
-        display: flex;
-    }
-    .IncludeTittle{
-        text-align: center;
-    }
-    .IncludeDescription{
-        text-align: center;
-    }
-    .Price{
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    .FreePlan{
-        padding: 1em;
-        width: 100%;
-        border-radius: 10px;
-        background-color: rgb(247, 247, 247);
-    
-    }
-    .PremiumPlan{
-        padding: 1em;
-        border-radius: 10px;
-        background-color: rgb(247, 247, 247);
-
-    }
-    .PlansCondition{
-        padding-right: 2em;
-        margin-top: 1em;
-        text-align: center;
-        font-size: 15px;
-    }
-    .AboutUs{
-        margin-top: 3em;
-        padding-top: 2em;
-        padding-bottom: 0em;
-        text-align: center;
-    }
-    .continueButton{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-
-
-/* ESTILO CSS DA DEMONSTRAÇÃO DO TIME */
-
-#team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.team-heading h3{
-    font-size: 3rem;
+
+body {
+    font-family: 'Nunito', sans-serif;;
 }
-.team-box{
-    width: 100%;
-    padding: 20px;
-    user-select: none;
-}
-.t-b-img{
-    width: 100%;
-    height: 350px;
+
+/* rgb(0, 151, 178) cor base do produto */
+/* rgb(240, 240, 240) cor do fundo cinza das imagens */
+
+.head{
     position: relative;
-}
-.t-b-img::after{
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+    background-image: url("../images/beginKidImage.jpeg");
+    background-position: right center;
+    background-position: right center;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-bottom: 4%;
+    height: 700px;
+    margin-right: auto;
+    margin-left: auto; 
+    background-color: rgba(46, 75, 82, 0);
     width: 100%;
-    height: 150px;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
-
+    font-size: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    /* padding: 10px 16px;
+    background: #555555;
+    color: #f1f1f1; */
+    z-index: 1000;
 }
-.t-b-img img{
+
+.head::before {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: bottom;
-    /* filter: grayscale(1); */
-}
-.t-b-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.t-b-text strong{
-    color: #919191;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-.t-b-text span{
-    color: #919191;
-    font-size: 0.9rem;
-
-}
-.team-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4px;
-}
-.team-social a{
-    margin: 0px 10px;
-    color: rgb(0, 151, 178);
-    font-size: 0.9rem;
-    transition: all ease 0.5s;
-}
-.team-social a:hover{
-    color: rgb(0, 151, 178);
 }
 
-.swiper{
-    max-width: 745px;
+.headerFull{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
     width: 100%;
-    padding-bottom: 50px;
+    color: red;
 }
-.swiper-slide{
-    width: 300px !important;
-    opacity: 0.2;
-    margin: 50px 0px;
-    margin-top: 0px;
+
+.leftHeaderContainer {
+    display: flex;
+    align-items: center;
 }
-.swiper-slide-active{
-    opacity: 1;
+nav {
+    margin: 0 40px;
+
+}
+.nav-item {
+    margin: 0 10px;
+}
+.nav-link {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.nav-link.change-color {
+    color: black;
+}
+.nav-link:hover {
     color: rgb(0, 151, 178);
 }
-
-/* FIM DO ESTILO DA DEMONSTRAÇÃO DO TIME */
-
-
-
-
-
-
-/* COMECO DA FOMRATAÇÃO DOS CARDS DE PLANOS  */
-
-main.cards {
-    margin-left: 0%;
-    display: flex;
-    padding: 32px;
+.WebSiteName{
+    color:rgb(0, 151, 178);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
 }
-
-main.cards section.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgb(240, 240, 240);
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    max-height: 468px;
-    margin-left: 32px;
-}
-
-main.cards section.card:first-child {
-    margin-left: 0;
-}
-
-main.cards section.card .icon {
-    width: 64px;
-    height: 64px;
-}
-
-main.cards section.card img {
-    width: 100%;
-}
-
-main.cards section.card h3 {
-    font-size: 100%;
-    margin: 16px 0;
-}
-
-main.cards section.card span {
-    font-weight: 300;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-}
-
-main.cards section.card.contact button {
-    background:  rgb(0, 151, 178);
-    border: none;
-    border-radius: 5px;
-    width: auto;
+.LoginArea{
     height: auto;
-    padding: 5px;
-}
-main.cards section.card.shop button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-}
-main.cards section.card.about button {
-    /* background: linear-gradient(to right, #FE5F8F, #FFC7D9); */
-}
-
-main.cards section.card.contact {
-    /* box-shadow: 20px 20px 50px -30px rgb(0, 151, 178); */
-}
-main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
-}
-main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
-}
-
-@media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
-
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    main.cards section.card button {
-        /* font-size: 70%; */
-    }
-
-}
-/* FIM DAS FORMATAÇÕES DOS CARD DE PLANOS */
-
-
-
-
-
-    .AboutUsTittle{
-        text-align: center;
-        color: rgb(0, 151, 178);
-    }
-    .AboutUsText{
-        padding-left: 5em;
-        padding-right: 5em;
-        margin-top: 3em;
-        font-size: 15px;
-        margin-top: 2em;
-        text-align: center
-    }
-    .AboutUsPhotos{
-        display: none;
-        padding-top: 2em;
-        padding-left: 15%;
-        width: 100%;
-        /* padding-left: 25%; */
-        /* display: flex; */
-    }
-    .PhotoMember{
-    
-    }
-    .Membername{
-        text-align: center;
-    }
-    .MemberPhoto{
-        /* padding-top: 1em; */
-        margin-left: 36.5%;
-        width: 10em;
-        height: auto;
-        border-radius: 50%;
-    }
-    .ExplanationVideo{
-        display:none;
-        margin-top: 3em;
-        padding-right: 20%;
-        padding-left: 25%;
-        padding-top: 3em;
-        padding-bottom: 3em;
-        background-color: rgb(240, 240, 240);
-        width: 100%;
-    }
-    .TittleExplanation{
-        font-size: 25px;
-        font-weight: 900;
-        /* padding-right: 20%; */
-        /* padding-left: 20%; */
-        text-align: center;
-    }
-    .ImageVideo{
-        margin-top: 2em;
-        height: auto;
-        width: 100%;
-    }
-    .MakeDiference{
-        display: none;
-        margin-top: 3em;
-        padding-right: 25%;
-        padding-left: 25%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        background-color: black;
-        width: 100%;
-    }
-    .DiferenceText{
-        margin: 0;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-    }
-    .FormArea{
-        width: 100%;
-        margin-top: 3em;
-        margin-left: 0%;
-        margin-right: 20%;
-    }
-    .ContactUs{
-        text-align: center;
-    }
-    .UserDatas{
-        margin-top: 2em;
-        margin-left: 25%;
-    }
-    .InputData{
-        border-radius: 5px;
-        border: 0.5px solid #CCC;
-        background: #FFF; 
-        width: 70%;
-        /* border:none; */
-        padding: 5px 7px;
-        outline: none;
-    }
-    .UserMessage{
-        border-radius: 5px;
-        border: 0.5px solid #CCC;
-        background: #FFF; 
-        width: 70%;
-        border-radius: 7px;
-        padding: 5px 7px;
-        outline: none;
-    }
-    .SenduserDataButton{
-        font-weight: 700;
-        color: white;
-        margin-top: 3em;
-        width: 6em;
-        height: 2em;
-        position: relative; left: 3em;
-        border: none;
-        background-color: rgb(0, 151, 178);
-    
-        /* border settings */
-        border-radius: 7px;
-    }
-    .Footer{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3em;
-        width: 100%;
-        background-color: rgb(0, 151, 178);
-        padding: 20px;
-    }
-    .FolowUs{
-        display: flex;
-        align-items: center;
-    }
-    .FollowUsText{
-        color: white;
-        margin: 0;
-    }
-    .SocialMediaIcons{
-        display: flex;
-        align-items: center;
-    }
-    .IconsText{
-        cursor: pointer;
-        color: white;
-        padding: 0 15px;
-        margin: 0;
-    }
-    .EnterpriseInformation{
-        padding-left: 5%;
-        width: 100%;
-        display: flex;
-    }
-    .AlimentraPlusInfo{
-        width: 30%;
-        margin-top: 3em;
-    }
-    .AlimentraPlusInfo a {
-        text-decoration: none;
-        color: unset;
-    }
-    .InfoTittle{
-        color: #0097B2;
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal; 
-    }
-    .Rights{
-        margin-top: 3em;
-        text-align: center;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 500px){
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Nunito', sans-serif;;
-    }
-    
-    /* rgb(0, 151, 178) cor base do produto */
-    /* rgb(240, 240, 240) cor do fundo cinza das imagens */
-    
-    .head{
-        position: relative;
-        background-image: url("../images/beginKidImage.jpeg");
-        background-position: right center;
-        background-position: right center;
-        background-position-x: right;
-        background-position-y: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
-        padding-bottom: 4%;
-        height: 300px;
-        margin-right: auto;
-        margin-left: auto; 
-        background-color: rgba(46, 75, 82, 0);
-        width: 100%;
-        /* padding: 10px 16px;
-        background: #555555;
-        color: #f1f1f1; */
-    }
-    
-    .head::before {
-        background-color: #000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .headerFull{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 30px;
-        width: 100%;
-    }
-    
-    .leftHeaderContainer {
-        display: flex;
-        align-items: center;
-    }
-
-    nav {
-        margin: 0 40px;
-    
-    }
-    .navbar-nav{
-        display: flex;
-    }
-    .nav-item {
-        display: none;
-        margin: 0 10px;
-    }
-    .nav-link {
-        color: #FFFFFF;
-        font-weight: normal;
-    }
-    .nav-link:hover {
-        color: rgb(0, 151, 178);
-    }
-    .WebSiteName{
-        color:rgb(0, 151, 178);
-        font-size: 22px;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .LoginArea{
-        height: auto;
-        display: flex;
-        align-items: center;
-        /* color:rgb(0, 151, 178); */
-    }
-    .LoginArea a {
-        text-decoration: none;
-    }
-    .FreeDemo{
-        border: none;
-        background-color: rgb(0, 151, 178);
-        text-align: center;
-        color: white;
-        padding: 6px 12px;
-        margin: 0 12px;
-    
-        /* border settings */
-        border-radius: 7px;
-    }
-    .LoginText{
-        color: #FFFFFF;
-    }
-    .sticky {
-        padding-top: 1em;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .sticky + .content {
-        padding-top: 102px;
-    }
-    .col{
-        padding-left: 2em;
-        font-weight: 700;
-        text-align: center;
-        color:rgb(0, 151, 178);
-    }
-
-    
-    .Who{
-        font-size: 20px;
-        margin-top: 1em;
-        font-weight: 900;
-        color: rgb(0, 151, 178);
-        text-align: center;
-    }
-    .WhatDo{
-        padding-right: 10%;
-        padding-left: 10%;
-        font-size: 15px;
-        margin-top: 1em;
-        text-align: center;
-    }
-    
-    .Informations{
-        margin-top: 5em;
-        /* display: flex; */
-    }
-    .Informations .Info {
-        padding: 40px;
-    }
-    .FirstInformation{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        align-items: center;
-    
-        width: 100%;
-    }
-    .TextFirstInformation{
-        padding-left: 0%;
-        width: 50%;
-    }
-    .InformationTittle{
-        font-weight: 700;
-        font-size: 15px;
-        margin-top: 1.5em;
-        color: rgb(0, 151, 178);
-    }
-    .InformationText{
-        margin-top: 0.5em;
-        font-size: 13px;
-    }
-    
-    .ImageFirstInformation{
-        display: block;
-        width: 50%;
-        padding-left: 10%;
-        padding-right: 5%;
-    }
-
-    .InformationImage{
-        height: auto;
-        width: 100%;
-    }
-    
-    .SecondInformation{
-        display: flex;
-        align-items: center;
-    }
-    .TextSecondInformation{
-        margin-left: 2em;
-        padding-right: 0%;
-        width: 50%;
-    }
-    .ThirdInformation{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        align-items: center;
-    }
-    
-    .PlansTittle{
-        margin-left: 5%;
-    }
-
-    .PlansMaintittle{
-        font-size: 3em;
-        margin-top: 2em;
-        text-align: center;
-    }
-    .Plansdescription{
-        text-align: center;
-    
-    }
-    .PlansCards{
-        width: 100%;
-        display: flex;
-        margin-top: 3em;
-        padding-right: 0%;
-        padding-left: 0%;
-        
-    }
-    .PlansItem{
-        font-size: 15px;
-        display: flex;
-    }
-    .IncludeTittle{
-        text-align: center;
-    }
-    .IncludeDescription{
-        text-align: center;
-    }
-    .Price{
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    .FreePlan{
-        padding: 1em;
-        width: 100%;
-        border-radius: 10px;
-        background-color: rgb(247, 247, 247);
-    
-    }
-    .PremiumPlan{
-        padding: 1em;
-        border-radius: 10px;
-        background-color: rgb(247, 247, 247);
-
-    }
-    .PlansCondition{
-        margin-top: 1em;
-        text-align: center;
-        font-size: 15px;
-    }
-    .AboutUs{
-        margin-top: 3em;
-        padding-top: 2em;
-        padding-bottom: 0em;
-        text-align: center;
-    }
-    .continueButton{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-
-
-/* ESTILO CSS DA DEMONSTRAÇÃO DO TIME */
-
-#team{
     display: flex;
-    justify-content: center;
     align-items: center;
+    /* color:rgb(0, 151, 178); */
+}
+.LoginArea a {
+    text-decoration: none;
+}
+.FreeDemo{
+    border: none;
+    background-color: rgb(0, 151, 178);
+    text-align: center;
+    color: white;
+    padding: 10px 16px;
+    margin: 0 12px;
+
+    /* border settings */
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+.FreeDemo:hover {
+   background-color: #01788d; 
+}
+.LoginText{
+    color: #FFFFFF;
+}
+.LoginText.change-color {
+    color: black;
+}
+.sticky {
+    padding-top: 1em;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+.col{
+    padding-left: 2em;
+    font-weight: 700;
+    text-align: center;
+    color:rgb(0, 151, 178);
+}
+
+.Who{
+    font-size: 30px;
+    margin-top: 1em;
+    font-weight: 700;
+    color: rgb(0, 151, 178);
+    padding-right: 30%;
+    padding-left: 30%;
+    text-align: center;
+}
+.WhatDo{
+    font-size: 20px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.Informations{
+    margin-top: 5em;
+    /* display: flex; */
+}
+.Informations .Info {
+    padding: 40px;
+}
+.FirstInformation{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+.TextFirstInformation{
+    padding-left: 10%;
+    width: 50%;
+}
+.InformationTittle{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 1.5em;
+    color: rgb(0, 151, 178);
+}
+.InformationText{
+    margin-top: 0.5em;
+    font-size: 20px;
+}
+
+.ImageFirstInformation{
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.SecondInformation{
+    display: flex;
+    align-items: center;
+}
+.TextSecondInformation{
+    padding-right: 10%;
+    width: 50%;
+}
+.ThirdInformation{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+}
+
+.PlansMaintittle{
+    font-size: 3em;
+    margin-top: 2em;
+    text-align: center;
+}
+.Plansdescription{
+    text-align: center;
+
+}
+.PlansCards{
+    display: flex;
+    margin-top: 3em;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+}
+.PlansItem{
+    display: flex;
+}
+.IncludeTittle{
+    text-align: center;
+}
+.IncludeDescription{
+    text-align: center;
+}
+.Price{
+    text-align: center;
+    margin-top: 1em;
+}
+.SignButton{
+    color: white;
+    height: 2em;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 151, 178);
+}
+.FreePlan{
+    border-radius: 10px;
+    padding: 1em;
+    height: auto;
+    margin-left: 19em;
+    width: 25%;
+    background-color: rgb(247, 247, 247);
+
+}
+.PremiumPlan{
+    border-radius: 10px;
+    padding: 1em;
+    height: auto;
+    margin-left: 10em;
+    width: 25%;
+    background-color: rgb(247, 247, 247);
+}
+.PlansCondition{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 15px;
+}
+.ExplanationVideo{
+    margin-top: 3em;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+}
+.TittleExplanation{
+    font-weight: 900;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+}
+.ImageVideo{
+    margin-top: 5em;
+    height: auto;
+    width: 100%;
+}
+.Questions{
+    padding-right: 30%;
+    padding-left: 30%;
+    width: 100%;
+}
+.QuestionsTittle{
+    margin-top: 2em;
+    text-align: center;
+}
+.QuestionExemple{
+    display: flex;
+    padding-left: 2em;
+    margin-top:1.5em;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+}
+.TextQuestion{
+    width: 90%;
+}
+.MakeDiference{
+    margin-top: 3em;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: black;
+    width: 100%;
+}
+.DiferenceText{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.FormArea{
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
+    align-items: center;
 }
-.team-heading h3{
-    font-size: 3rem;
+.ContactUs{
+    text-align: center;
 }
-.team-box{
+.form-data {
+    width: 600px;
+}
+.input-field {
+    margin: 16px 0;
     width: 100%;
+}
+.input-field label{
+    display: block;
+}
+.input-field input{
+    border-radius: 5px;
+    border: 0.5px solid #CCC;
+    /* border:none; */
+    padding: 7px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+.input-field textarea{
+    border-radius: 5px;
+    border: 0.5px solid #CCC;
+    background: #FFF; 
+    border-radius: 7px;
+    padding: 5px 7px;
+    outline: none;
+    width: 100%;
+}
+.submit-field {
+    text-align: center;
+}
+.submit-field input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: #0097B2;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.submit-field input[type="submit"]:hover {
+    background-color: #01788d;
+}
+
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    width: 100%;
+    background-color: rgb(0, 151, 178);
     padding: 20px;
-    user-select: none;
 }
-.t-b-img{
-    width: 100%;
-    height: 350px;
-    position: relative;
-}
-.t-b-img::after{
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
-
-}
-.t-b-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: bottom;
-    /* filter: grayscale(1); */
-}
-.t-b-text{
+.FolowUs{
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
-.t-b-text strong{
-    color: #919191;
+.FollowUsText{
+    color: white;
+    margin: 0;
+}
+.SocialMediaIcons{
+    display: flex;
+    align-items: center;
+}
+.IconsText{
+    cursor: pointer;
+    color: white;
+    padding: 0 15px;
+    margin: 0;
+}
+.EnterpriseInformation{
+    padding-left: 5%;
+    width: 100%;
+    display: flex;
+}
+.AlimentraPlusInfo{
+    width: 30%;
+    margin-top: 3em;
+}
+.AlimentraPlusInfo a {
+    text-decoration: none;
+    color: unset;
+}
+.InfoTittle{
+    color: #0097B2;
+    font-size: 17px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 1.2rem;
+    line-height: normal; 
 }
-.t-b-text span{
-    color: #919191;
-    font-size: 0.9rem;
-
-}
-.team-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4px;
-}
-.team-social a{
-    margin: 0px 10px;
-    color: rgb(0, 151, 178);
-    font-size: 0.9rem;
-    transition: all ease 0.5s;
-}
-.team-social a:hover{
-    color: rgb(0, 151, 178);
-}
-
-.swiper{
-    max-width: 745px;
-    width: 100%;
-    padding-bottom: 50px;
-}
-.swiper-slide{
-    width: 300px !important;
-    opacity: 0.2;
-    margin: 50px 0px;
-    margin-top: 0px;
-}
-.swiper-slide-active{
-    opacity: 1;
-    color: rgb(0, 151, 178);
-}
-
-/* FIM DO ESTILO DA DEMONSTRAÇÃO DO TIME */
-
-
-
-
-
-
-/* COMECO DA FOMRATAÇÃO DOS CARDS DE PLANOS  */
-
-main.cards {
-    margin-left: 30%;
-    display: flex;
-    padding: 32px;
-}
-
-main.cards section.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Rights{
+    margin-top: 3em;
     text-align: center;
-    background: rgb(240, 240, 240);
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    max-height: 468px;
-    margin-left: 32px;
+    font-size: 12px;
 }
-
-main.cards section.card:first-child {
-    margin-left: 0;
-}
-
-main.cards section.card .icon {
-    width: 64px;
-    height: 64px;
-}
-
-main.cards section.card img {
-    width: 100%;
-}
-
-main.cards section.card h3 {
-    font-size: 100%;
-    margin: 16px 0;
-}
-
-main.cards section.card span {
-    font-weight: 300;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-}
-
-main.cards section.card.contact button {
-    background:  rgb(0, 151, 178);
-    border: none;
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    padding: 5px;
-}
-main.cards section.card.shop button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-}
-main.cards section.card.about button {
-    /* background: linear-gradient(to right, #FE5F8F, #FFC7D9); */
-}
-
-main.cards section.card.contact {
-    /* box-shadow: 20px 20px 50px -30px rgb(0, 151, 178); */
-}
-main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
-}
-main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
-}
-
-@media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
-
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    main.cards section.card button {
-        /* font-size: 70%; */
-    }
-
-}
-/* FIM DAS FORMATAÇÕES DOS CARD DE PLANOS */
-
-
-
-
-
-    .AboutUsTittle{
-        text-align: center;
-        color: rgb(0, 151, 178);
-    }
-    .AboutUsText{
-        padding-left: 5em;
-        padding-right: 5em;
-        margin-top: 3em;
-        font-size: 15px;
-        margin-top: 2em;
-        text-align: center
-    }
-    .AboutUsPhotos{
-        display: none;
-        padding-top: 2em;
-        padding-left: 15%;
-        width: 100%;
-        /* padding-left: 25%; */
-        /* display: flex; */
-    }
-    .PhotoMember{
-    
-    }
-    .Membername{
-        text-align: center;
-    }
-    .MemberPhoto{
-        /* padding-top: 1em; */
-        margin-left: 36.5%;
-        width: 10em;
-        height: auto;
-        border-radius: 50%;
-    }
-    .ExplanationVideo{
-        margin-top: 3em;
-        padding-right: 20%;
-        padding-left: 25%;
-        padding-top: 3em;
-        padding-bottom: 3em;
-        background-color: rgb(240, 240, 240);
-        width: 100%;
-    }
-    .TittleExplanation{
-        font-size: 25px;
-        font-weight: 900;
-        /* padding-right: 20%; */
-        /* padding-left: 20%; */
-        text-align: center;
-    }
-    .ImageVideo{
-        margin-top: 2em;
-        height: auto;
-        width: 100%;
-    }
-    .MakeDiference{
-        margin-top: 3em;
-        padding-right: 25%;
-        padding-left: 25%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        background-color: black;
-        width: 100%;
-    }
-    .DiferenceText{
-        margin: 0;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-    }
-    .FormArea{
-        width: 100%;
-        margin-top: 3em;
-        margin-left: 0%;
-        margin-right: 20%;
-    }
-    .ContactUs{
-        text-align: center;
-    }
-    .UserDatas{
-        margin-top: 2em;
-        margin-left: 25%;
-    }
-    .InputData{
-        border-radius: 5px;
-        border: 0.5px solid #CCC;
-        background: #FFF; 
-        width: 70%;
-        /* border:none; */
-        padding: 5px 7px;
-        outline: none;
-    }
-    .UserMessage{
-        border-radius: 5px;
-        border: 0.5px solid #CCC;
-        background: #FFF; 
-        width: 70%;
-        border-radius: 7px;
-        padding: 5px 7px;
-        outline: none;
-    }
-    .SenduserDataButton{
-        font-weight: 700;
-        color: white;
-        margin-top: 3em;
-        width: 6em;
-        height: 2em;
-        position: relative; left: 8em;
-        border: none;
-        background-color: rgb(0, 151, 178);
-    
-        /* border settings */
-        border-radius: 7px;
-    }
-    .Footer{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3em;
-        width: 100%;
-        background-color: rgb(0, 151, 178);
-        padding: 20px;
-    }
-    .FolowUs{
-        display: flex;
-        align-items: center;
-    }
-    .FollowUsText{
-        color: white;
-        margin: 0;
-    }
-    .SocialMediaIcons{
-        display: flex;
-        align-items: center;
-    }
-    .IconsText{
-        cursor: pointer;
-        color: white;
-        padding: 0 15px;
-        margin: 0;
-    }
-    .EnterpriseInformation{
-        padding-left: 5%;
-        width: 100%;
-        display: flex;
-    }
-    .AlimentraPlusInfo{
-        width: 30%;
-        margin-top: 3em;
-    }
-    .AlimentraPlusInfo a {
-        text-decoration: none;
-        color: unset;
-    }
-    .InfoTittle{
-        color: #0097B2;
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal; 
-    }
-    .Rights{
-        margin-top: 3em;
-        text-align: center;
-        font-size: 12px;
-    }
-}
-
-
-@media only screen and (min-width: 1100px){
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Nunito', sans-serif;;
-    }
-    
-    /* rgb(0, 151, 178) cor base do produto */
-    /* rgb(240, 240, 240) cor do fundo cinza das imagens */
-    
-    .head{
-        position: relative;
-        background-image: url("../images/beginKidImage.jpeg");
-        background-position: right center;
-        background-position: right center;
-        background-position-x: right;
-        background-position-y: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
-        padding-bottom: 4%;
-        height: 600px;
-        margin-right: auto;
-        margin-left: auto; 
-        background-color: rgba(46, 75, 82, 0);
-        width: 100%;
-        font-size: 15px;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
-        /* padding: 10px 16px;
-        background: #555555;
-        color: #f1f1f1; */
-    }
-    
-    .head::before {
-        background-color: #000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .headerFull{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 30px;
-        width: 100%;
-    }
-    
-    .leftHeaderContainer {
-        display: flex;
-        align-items: center;
-    }
-    nav {
-        margin: 0 40px;
-    
-    }
-    .nav-item {
-        display:block;
-        margin: 0 10px;
-    }
-    .nav-link {
-        color: #FFFFFF;
-        font-weight: normal;
-    }
-    .nav-link:hover {
-        color: rgb(0, 151, 178);
-    }
-    .WebSiteName{
-        color:rgb(0, 151, 178);
-        font-size: 22px;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .LoginArea{
-        height: auto;
-        display: flex;
-        align-items: center;
-        /* color:rgb(0, 151, 178); */
-    }
-    .LoginArea a {
-        text-decoration: none;
-    }
-    .FreeDemo{
-        border: none;
-        background-color: rgb(0, 151, 178);
-        text-align: center;
-        color: white;
-        padding: 6px 12px;
-        margin: 0 12px;
-    
-        /* border settings */
-        border-radius: 7px;
-    }
-    .LoginText{
-        color: #FFFFFF;
-    }
-    .sticky {
-        padding-top: 1em;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .sticky + .content {
-        padding-top: 102px;
-    }
-    .col{
-        padding-left: 2em;
-        font-weight: 700;
-        text-align: center;
-        color:rgb(0, 151, 178);
-    }
-
-    
-    .Who{
-        font-size: 30px;
-        margin-top: 1em;
-        font-weight: 900;
-        color: rgb(0, 151, 178);
-        /* padding-right: 30%;
-        padding-left: 30%; */
-        text-align: center;
-    }
-    .WhatDo{
-        font-size: 20px;
-        margin-top: 1em;
-        text-align: center;
-    }
-    
-    .Informations{
-        margin-top: 5em;
-        /* display: flex; */
-    }
-    .Informations .Info {
-        padding: 40px;
-    }
-    .FirstInformation{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        align-items: center;
-    
-        width: 100%;
-    }
-    .TextFirstInformation{
-        padding-left: 10%;
-        width: 50%;
-    }
-    .InformationTittle{
-        font-weight: 700;
-        font-size: 30px;
-        margin-top: 1.5em;
-        color: rgb(0, 151, 178);
-    }
-    .InformationText{
-        margin-top: 0.5em;
-        font-size: 20px;
-    }
-    
-    .ImageFirstInformation{
-        display: block;
-        width: 50%;
-        padding-left: 10%;
-        padding-right: 5%;
-    }
-    
-    .SecondInformation{
-        display: flex;
-        align-items: center;
-    }
-    .TextSecondInformation{
-        padding-right: 10%;
-        width: 50%;
-    }
-    .ThirdInformation{
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        align-items: center;
-    }
-    
-    .PlansTittle{
-        margin-left: 5%;
-    }
-
-    .PlansMaintittle{
-        font-size: 3em;
-        margin-top: 2em;
-        text-align: center;
-    }
-    .Plansdescription{
-        text-align: center;
-    
-    }
-    .PlansCards{
-        width: 100%;
-        display: flex;
-        margin-top: 3em;
-        padding-right: 0%;
-        padding-left: 0%;
-        
-    }
-    .PlansItem{
-        display: flex;
-    }
-    .IncludeTittle{
-        text-align: center;
-    }
-    .IncludeDescription{
-        text-align: center;
-    }
-    .Price{
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    .continueButton{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
 
 /* ESTILO CSS DA DEMONSTRAÇÃO DO TIME */
 
@@ -1461,10 +423,10 @@ main.cards section.card.about {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    margin: 80px 0;
 }
-.team-heading h3{
-    font-size: 3rem;
+.team-heading h2 {
+    font-weight: 900;
 }
 .team-box{
     width: 100%;
@@ -1541,278 +503,3 @@ main.cards section.card.about {
     opacity: 1;
     color: rgb(0, 151, 178);
 }
-
-/* FIM DO ESTILO DA DEMONSTRAÇÃO DO TIME */
-
-/* COMECO DA FOMRATAÇÃO DOS CARDS DE PLANOS  */
-
-main.cards {
-    margin-left: 30%;
-    display: flex;
-    padding: 32px;
-}
-
-main.cards section.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgb(240, 240, 240);
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    max-height: 468px;
-    margin-left: 32px;
-}
-
-main.cards section.card:first-child {
-    margin-left: 0;
-}
-
-main.cards section.card .icon {
-    width: 64px;
-    height: 64px;
-}
-
-main.cards section.card img {
-    width: 100%;
-}
-
-main.cards section.card h3 {
-    font-size: 100%;
-    margin: 16px 0;
-}
-
-main.cards section.card span {
-    font-weight: 300;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-}
-
-main.cards section.card.contact button {
-    background:  rgb(0, 151, 178);
-    border: none;
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    padding: 5px;
-}
-main.cards section.card.shop button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-}
-main.cards section.card.about button {
-    /* background: linear-gradient(to right, #FE5F8F, #FFC7D9); */
-}
-
-main.cards section.card.contact {
-    /* box-shadow: 20px 20px 50px -30px rgb(0, 151, 178); */
-}
-main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
-}
-main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
-}
-
-@media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
-
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    main.cards section.card button {
-        /* font-size: 70%; */
-    }
-
-}
-/* FIM DAS FORMATAÇÕES DOS CARD DE PLANOS */
-
-
-
-
-
-
-    .AboutUs{
-        margin-top: 3em;
-        padding-left: 30em;
-        padding-right: 30em;
-        padding-top: 2em;
-        padding-bottom: 0em;
-        text-align: center;
-    }
-    .AboutUsTittle{
-        text-align: center;
-        color: rgb(0, 151, 178);
-    }
-    .AboutUsText{
-        padding-left: 10em;
-        padding-right: 10em;
-        margin-top: 3em;
-        font-size: 15px;
-        margin-top: 2em;
-        text-align: center
-    }
-    .AboutUsPhotos{
-        padding-top: 2em;
-        padding-left: 15%;
-        width: 100%;
-        /* padding-left: 25%; */
-        display: flex;
-    }
-    .PhotoMember{
-    
-    }
-    .Membername{
-        margin-left: 7em;
-        text-align: center;
-    }
-    .MemberPhoto{
-        width: 10em;
-        height: auto;
-        border-radius: 50%;
-    }
-    .ExplanationVideo{
-        display: block;
-        margin-top: 3em;
-        padding-right: 20%;
-        padding-left: 25%;
-        padding-top: 3em;
-        padding-bottom: 3em;
-        background-color: rgb(240, 240, 240);
-        width: 100%;
-    }
-    .TittleExplanation{
-        font-weight: 900;
-        padding-right: 20%;
-        padding-left: 20%;
-        text-align: center;
-    }
-    .ImageVideo{
-        margin-top: 5em;
-        height: auto;
-        width: 100%;
-    }
-    .MakeDiference{
-        display: block;
-        margin-top: 3em;
-        padding-right: 25%;
-        padding-left: 25%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        background-color: black;
-        width: 100%;
-    }
-    .DiferenceText{
-        margin: 0;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-    }
-    .FormArea{
-        width: 50%;
-        margin-top: 3em;
-        margin-left: 25%;
-        margin-right: 20%;
-    }
-    .ContactUs{
-        text-align: center;
-    }
-    .UserDatas{
-        margin-top: 2em;
-        margin-left: 25%;
-    }
-    .InputData{
-        border-radius: 5px;
-        border: 0.5px solid #CCC;
-        background: #FFF; 
-        width: 70%;
-        /* border:none; */
-        padding: 5px 7px;
-        outline: none;
-    }
-    .UserMessage{
-        border-radius: 5px;
-        border: 0.5px solid #CCC;
-        background: #FFF; 
-        width: 70%;
-        border-radius: 7px;
-        padding: 5px 7px;
-        outline: none;
-    }
-    .SenduserDataButton{
-        font-weight: 700;
-        color: white;
-        margin-top: 3em;
-        width: 6em;
-        height: 2em;
-        position: relative; left: 8em;
-        border: none;
-        background-color: rgb(0, 151, 178);
-    
-        /* border settings */
-        border-radius: 7px;
-    }
-    .Footer{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3em;
-        width: 100%;
-        background-color: rgb(0, 151, 178);
-        padding: 20px;
-    }
-    .FolowUs{
-        display: flex;
-        align-items: center;
-    }
-    .FollowUsText{
-        color: white;
-        margin: 0;
-    }
-    .SocialMediaIcons{
-        display: flex;
-        align-items: center;
-    }
-    .IconsText{
-        cursor: pointer;
-        color: white;
-        padding: 0 15px;
-        margin: 0;
-    }
-    .EnterpriseInformation{
-        padding-left: 5%;
-        width: 100%;
-        display: flex;
-    }
-    .AlimentraPlusInfo{
-        width: 30%;
-        margin-top: 3em;
-    }
-    .AlimentraPlusInfo a {
-        text-decoration: none;
-        color: unset;
-    }
-    .InfoTittle{
-        color: #0097B2;
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal; 
-    }
-    .Rights{
-        margin-top: 3em;
-        text-align: center;
-        font-size: 12px;
-    }
-
-}
-
-
