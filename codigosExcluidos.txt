@@ -1,0 +1,36 @@
+  <!-- Começo da parte de Perguntas -->
+  <!-- <div class="Questions">
+        <h1 class="QuestionsTittle">Perguntas Frequentes</h1>
+
+        <div class="QuestionExemple">
+          <h3 class="TextQuestion">Pergunta de exemplo</h3>
+          <i class="fa-solid fa-chevron-down" style="margin-top: 0.5em;"></i>
+        </div>
+
+        <div class="QuestionExemple">
+          <h3 class="TextQuestion">Pergunta de exemplo</h3>
+          <i class="fa-solid fa-chevron-down" style="margin-top: 0.5em;"></i>
+        </div>
+
+        <div class="QuestionExemple">
+          <h3 class="TextQuestion">Pergunta de exemplo</h3>
+          <i class="fa-solid fa-chevron-down" style="margin-top: 0.5em;"></i>
+        </div>
+
+        <div class="QuestionExemple">
+          <h3 class="TextQuestion">Pergunta de exemplo</h3>
+          <i class="fa-solid fa-chevron-down" style="margin-top: 0.5em;"></i>
+        </div>
+
+        <div class="QuestionExemple">
+          <h3 class="TextQuestion">Pergunta de exemplo</h3>
+          <i class="fa-solid fa-chevron-down" style="margin-top: 0.5em;"></i>
+        </div>
+
+        <div class="QuestionExemple">
+          <h3 class="TextQuestion">Pergunta de exemplo</h3>
+          <i class="fa-solid fa-chevron-down" style="margin-top: 0.5em;"></i>
+        </div>
+
+    </div> -->
+  <!-- Fim da parte de Perguntas -->
