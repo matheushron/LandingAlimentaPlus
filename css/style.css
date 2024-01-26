@@ -251,7 +251,7 @@ body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
   }
   
   .ImageVideo {
-    width: 100%;
+    width: 60%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -429,6 +429,7 @@ body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
   
   /* EnterpriseInformation styles */
   .EnterpriseInformation {
+    display: flex;
     background-color: #444;
     color: #fff;
   }
@@ -453,7 +454,7 @@ body {
 .WebSiteName {
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 151, 178);
 }
 
 .navbar-nav {
@@ -613,7 +614,12 @@ body {
 }
 
 .AlimentraPlusInfoDescription {
+  /* margin-left: 45rem; */
     margin-top: 10px;
+}
+.DirectLinkLogIn{
+  text-decoration: none;
+  color: #fff;
 }
 
 .Rights {
