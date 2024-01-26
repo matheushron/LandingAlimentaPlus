@@ -1,423 +1,265 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-* {
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Nunito', sans-serif;;
-}
-
-/* rgb(0, 151, 178) cor base do produto */
-/* rgb(240, 240, 240) cor do fundo cinza das imagens */
-
-.head{
-    position: relative;
-    background-image: url("../images/beginKidImage.jpeg");
-    background-position: right center;
-    background-position: right center;
-    background-position-x: right;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    padding-bottom: 4%;
-    height: 700px;
-    margin-right: auto;
-    margin-left: auto; 
-    background-color: rgba(46, 75, 82, 0);
-    width: 100%;
-    font-size: 15px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
-    /* padding: 10px 16px;
-    background: #555555;
-    color: #f1f1f1; */
-    z-index: 1000;
-}
-
-.head::before {
-    background-color: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.headerFull{
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  .headerFull {
+    background-color: rgb(255, 255, 255) !important;  
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
-    width: 100%;
-    color: red;
-}
-
-.leftHeaderContainer {
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .leftHeaderContainer {
     display: flex;
     align-items: center;
-}
-nav {
-    margin: 0 40px;
-
-}
-.nav-item {
-    margin: 0 10px;
-}
-.nav-link {
-    color: #FFFFFF;
-    font-weight: normal;
-}
-.nav-link.change-color {
-    color: black;
-}
-.nav-link:hover {
-    color: rgb(0, 151, 178);
-}
-.WebSiteName{
-    color:rgb(0, 151, 178);
-    font-size: 22px;
+  }
+  
+  .WebSiteName {
+    text-decoration: none;
+    font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: none;
-}
-.LoginArea{
-    height: auto;
-    display: flex;
-    align-items: center;
-    /* color:rgb(0, 151, 178); */
-}
-.LoginArea a {
-    text-decoration: none;
-}
-.FreeDemo{
-    border: none;
-    background-color: rgb(0, 151, 178);
-    text-align: center;
-    color: white;
-    padding: 10px 16px;
-    margin: 0 12px;
-
-    /* border settings */
-    border-radius: 7px;
-    transition: all 0.2s ease-in-out;
-}
-.FreeDemo:hover {
-   background-color: #01788d; 
-}
-.LoginText{
-    color: #FFFFFF;
-}
-.LoginText.change-color {
-    color: black;
-}
-.sticky {
-    padding-top: 1em;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .content {
-    padding-top: 102px;
-}
-.col{
-    padding-left: 2em;
-    font-weight: 700;
-    text-align: center;
-    color:rgb(0, 151, 178);
-}
-
-.Who{
-    font-size: 30px;
-    margin-top: 1em;
-    font-weight: 700;
     color: rgb(0, 151, 178);
-    padding-right: 30%;
-    padding-left: 30%;
-    text-align: center;
-}
-.WhatDo{
-    font-size: 20px;
-    margin-top: 2em;
-    text-align: center;
-}
-
-.Informations{
-    margin-top: 5em;
-    /* display: flex; */
-}
-.Informations .Info {
-    padding: 40px;
-}
-.FirstInformation{
-    background-color: rgb(247, 247, 247);
+    margin-right: 2rem;
+  }
+  
+  .navbar {
     display: flex;
-    align-items: center;
-
-    width: 100%;
-}
-.TextFirstInformation{
-    padding-left: 10%;
-    width: 50%;
-}
-.InformationTittle{
-    font-weight: 700;
-    font-size: 30px;
-    margin-top: 1.5em;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
     color: rgb(0, 151, 178);
-}
-.InformationText{
-    margin-top: 0.5em;
-    font-size: 20px;
-}
-
-.ImageFirstInformation{
-    width: 50%;
-    padding-left: 10%;
-    padding-right: 5%;
-}
-
-.SecondInformation{
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Login/Experimente area */
+  .LoginArea {
     display: flex;
     align-items: center;
-}
-.TextSecondInformation{
-    padding-right: 10%;
-    width: 50%;
-}
-.ThirdInformation{
-    background-color: rgb(247, 247, 247);
-    display: flex;
-    align-items: center;
-}
-
-.PlansMaintittle{
-    font-size: 3em;
-    margin-top: 2em;
-    text-align: center;
-}
-.Plansdescription{
-    text-align: center;
-
-}
-.PlansCards{
-    display: flex;
-    margin-top: 3em;
-    padding-right: 10%;
-    padding-left: 10%;
-    
-}
-.PlansItem{
-    display: flex;
-}
-.IncludeTittle{
-    text-align: center;
-}
-.IncludeDescription{
-    text-align: center;
-}
-.Price{
-    text-align: center;
-    margin-top: 1em;
-}
-.SignButton{
-    color: white;
-    height: 2em;
-    width: 100%;
-    border-radius: 7px;
-    border: none;
+  }
+  
+  .FreeDemo {
     background-color: rgb(0, 151, 178);
-}
-.FreePlan{
-    border-radius: 10px;
-    padding: 1em;
-    height: auto;
-    margin-left: 19em;
-    width: 25%;
-    background-color: rgb(247, 247, 247);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .LoginText {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Breve descrição styles */
+  .Who {
+    color: rgb(0, 151, 178);
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .WhatDo {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* Information with images styles */
 
-}
-.PremiumPlan{
-    border-radius: 10px;
-    padding: 1em;
-    height: auto;
-    margin-left: 10em;
-    width: 25%;
-    background-color: rgb(247, 247, 247);
-}
-.PlansCondition{
-    margin-top: 1em;
-    text-align: center;
-    font-size: 15px;
-}
-.ExplanationVideo{
-    margin-top: 3em;
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    background-color: rgb(240, 240, 240);
-    width: 100%;
-}
-.TittleExplanation{
-    font-weight: 900;
-    padding-right: 20%;
-    padding-left: 20%;
-    text-align: center;
-}
-.ImageVideo{
-    margin-top: 5em;
-    height: auto;
-    width: 100%;
-}
-.Questions{
-    padding-right: 30%;
-    padding-left: 30%;
-    width: 100%;
-}
-.QuestionsTittle{
-    margin-top: 2em;
-    text-align: center;
-}
-.QuestionExemple{
+  /* Update for Informations section */
+.Informations {
     display: flex;
-    padding-left: 2em;
-    margin-top:1.5em;
-    background-color: rgb(247, 247, 247);
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+    margin: 2rem 0;
+  }
+  
+  /* Update for Info divs */
+  .Info {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    height: 40px;
+    overflow: hidden;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  /* Update for TextFirstInformation and TextSecondInformation */
+  .TextFirstInformation, .TextSecondInformation {
+    padding: 1rem;
+    flex: 1; /* Allow text content to grow and take remaining space */
+  }
+  
+  /* Update for ImageFirstInformation */
+  .ImageFirstInformation {
+    flex-shrink: 0; /* Prevent images from shrinking */
+  }
+  
+  /* Update for InformationImage */
+  .InformationImage {
     width: 100%;
-}
-.TextQuestion{
-    width: 90%;
-}
-.MakeDiference{
-    margin-top: 3em;
-    padding-right: 25%;
-    padding-left: 25%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background-color: black;
-    width: 100%;
-}
-.DiferenceText{
-    margin: 0;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-.FormArea{
-    width: 100%;
-    margin: 80px auto;
+    height: auto;
+  }
+  
+
+  /* .Informations {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+  
+  .Info {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .InformationTittle {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .InformationText {
+    padding: 1rem;
+  }
+  
+  .InformationImage {
+    width: 100%;
+    height: auto;
+  } */
+  
+  /* Plans styles */
+  .Plans {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .PlansTittle {
+    margin-bottom: 2rem;
+  }
+  
+  .PlansMaintittle {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .Plansdescription {
+    color: #555;
+  }
+  
+  .PlansCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .FreePlan,
+  .PremiumPlan {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .IncludeTittle {
+    /* background-color: #007bff; */
+    /* color: #fff; */
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .IncludeDescription {
+    padding: 1rem;
+    color: #555;
+  }
+  
+  .PlansItem {
+    display: flex;
     align-items: center;
-}
-.ContactUs{
-    text-align: center;
-}
-.form-data {
-    width: 600px;
-}
-.input-field {
-    margin: 16px 0;
-    width: 100%;
-}
-.input-field label{
-    display: block;
-}
-.input-field input{
-    border-radius: 5px;
-    border: 0.5px solid #CCC;
-    /* border:none; */
-    padding: 7px;
-    outline: none;
-    font-size: 14px;
-    width: 100%;
-}
-.input-field textarea{
-    border-radius: 5px;
-    border: 0.5px solid #CCC;
-    background: #FFF; 
-    border-radius: 7px;
-    padding: 5px 7px;
-    outline: none;
-    width: 100%;
-}
-.submit-field {
-    text-align: center;
-}
-.submit-field input[type="submit"] {
-    border: none;
-    outline: none;
-    background-color: #0097B2;
-    padding: 8px 16px;
-    color: #FFFFFF;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-}
-.submit-field input[type="submit"]:hover {
-    background-color: #01788d;
-}
-
-
-.Footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3em;
-    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .ItemDescription {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  
+  .Price {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .SignButton {
     background-color: rgb(0, 151, 178);
-    padding: 20px;
-}
-.FolowUs{
-    display: flex;
-    align-items: center;
-}
-.FollowUsText{
-    color: white;
-    margin: 0;
-}
-.SocialMediaIcons{
-    display: flex;
-    align-items: center;
-}
-.IconsText{
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    color: white;
-    padding: 0 15px;
-    margin: 0;
-}
-.EnterpriseInformation{
-    padding-left: 5%;
-    width: 100%;
-    display: flex;
-}
-.AlimentraPlusInfo{
-    width: 30%;
-    margin-top: 3em;
-}
-.AlimentraPlusInfo a {
-    text-decoration: none;
-    color: unset;
-}
-.InfoTittle{
-    color: #0097B2;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-}
-.Rights{
-    margin-top: 3em;
+  }
+  
+  .SignButton:hover {
+    background-color: rgb(0, 151, 178);
+  }
+  
+  .PlansCondition {
+    color: #555;
+  }
+  
+  /* ExplanationVideo styles */
+  .ExplanationVideo {
     text-align: center;
-    font-size: 12px;
-}
+    margin: 2rem 0;
+  }
+  
+  .TittleExplanation {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .ImageVideo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Team section styles */
 
-/* ESTILO CSS DA DEMONSTRAÇÃO DO TIME */
-
-#team{
+  #team{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,4 +344,318 @@ nav {
 .swiper-slide-active{
     opacity: 1;
     color: rgb(0, 151, 178);
+}
+
+  
+  /* MakeDiference styles */
+  .MakeDiference {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 25%;
+    padding-left: 25%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .DiferenceText {
+    font-size: 2rem;
+    color: #FFFF;
+  }
+  
+  /* FormArea styles */
+  .FormArea {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .ContactUs {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .form-data {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .input-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-field {
+    margin-top: 1rem;
+  }
+  
+  /* Footer styles */
+  .Footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .FolowUs,
+  .SocialMediaIcons {
+    margin-bottom: 1rem;
+  }
+  
+  .FollowUsText {
+    font-size: 1.5rem;
+  }
+  
+  .IconsText {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  
+  /* EnterpriseInformation styles */
+  .EnterpriseInformation {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.headerFull {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.WebSiteName {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    /* color: white; */
+}
+
+/* Breve descrição Styles */
+.Who {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.WhatDo {
+    text-align: center;
+}
+
+/* Informations Styles */
+.InformationTittle {
+    text-align: center;
+}
+
+.InformationText {
+    text-align: justify;
+}
+
+.InformationImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Plans Styles */
+.Plans {
+    padding: 20px;
+}
+
+.PlansMaintittle {
+    text-align: center;
+}
+
+.FreePlan,
+.PremiumPlan {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.IncludeTittle {
+    text-align: center;
+}
+
+.IncludeDescription {
+    text-align: center;
+}
+
+.Price {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.SignButton {
+    display: block;
+    margin: 10px auto;
+}
+
+/* ExplanationVideo Styles */
+.TittleExplanation {
+    text-align: center;
+}
+
+.ImageVideo {
+    display: block;
+    margin: 0 auto;
+}
+
+/* MakeDiference Styles */
+.DiferenceText {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* FormArea Styles */
+.ContactUs {
+    text-align: center;
+}
+
+.form-data {
+    margin-top: 20px;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+.input-field label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.submit-field input[type="submit"] {
+    background-color: rgb(0, 151, 178);
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer Styles */
+.Footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.FolowUs {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.SocialMediaIcons {
+    text-align: center;
+}
+
+.SocialMediaIcons a {
+    color: white;
+    margin: 0 5px;
+}
+
+/* EnterpriseInformation Styles */
+.EnterpriseInformation {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.InfoTittle {
+    margin-bottom: 10px;
+}
+
+.AlimentraPlusInfoDescription {
+    margin-top: 10px;
+}
+
+.Rights {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .headerFull {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .MakeDiference {
+        margin-top: 50px;
+    }
+
+    .DiferenceText {
+        font-size: 1.2rem;
+    }
+
+    .InformationImage {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .headerFull {
+        padding: 10px;
+    }
+
+    .InformationImage {
+        max-width: 100%;
+    }
 }
