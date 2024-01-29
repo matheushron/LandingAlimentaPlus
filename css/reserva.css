@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  .headerFull {
+    background-color: rgb(255, 255, 255) !important;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .leftHeaderContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .WebSiteName {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 151, 178);
+    margin-right: 2rem;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: rgb(0, 151, 178);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Login/Experimente area */
+  .LoginArea {
+    display: flex;
+    align-items: center;
+  }
+  
+  .FreeDemo {
+    background-color: rgb(0, 151, 178);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .LoginText {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Breve descrição styles */
+  .Who {
+    color: rgb(0, 151, 178);
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .WhatDo {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* Information with images styles */
+
+  /* Update for Informations section */
+.Informations {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+    margin: 2rem 0;
+  }
+  
+  /* Update for Info divs */
+  .Info {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  /* Update for TextFirstInformation and TextSecondInformation */
+  .TextFirstInformation, .TextSecondInformation {
+    padding: 1rem;
+    flex: 1; /* Allow text content to grow and take remaining space */
+  }
+  
+  /* Update for ImageFirstInformation */
+  .ImageFirstInformation {
+    flex-shrink: 0; /* Prevent images from shrinking */
+  }
+  
+  /* Update for InformationImage */
+  .InformationImage {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  /* .Informations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+  
+  .Info {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .InformationTittle {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .InformationText {
+    padding: 1rem;
+  }
+  
+  .InformationImage {
+    width: 100%;
+    height: auto;
+  } */
+  
+  /* Plans styles */
+  .Plans {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .PlansTittle {
+    margin-bottom: 2rem;
+  }
+  
+  .PlansMaintittle {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .Plansdescription {
+    color: #555;
+  }
+  
+  .PlansCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .FreePlan,
+  .PremiumPlan {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .IncludeTittle {
+    /* background-color: #007bff; */
+    /* color: #fff; */
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .IncludeDescription {
+    padding: 1rem;
+    color: #555;
+  }
+  
+  .PlansItem {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .ItemDescription {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  
+  .Price {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .SignButton {
+    background-color: rgb(0, 151, 178);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .SignButton:hover {
+    background-color: rgb(0, 151, 178);
+  }
+  
+  .PlansCondition {
+    color: #555;
+  }
+  
+  /* ExplanationVideo styles */
+  .ExplanationVideo {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .TittleExplanation {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .ImageVideo {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Team section styles */
+
+  #team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 80px 0;
+}
+.team-heading h2 {
+    font-weight: 900;
+}
+.team-box{
+    width: 100%;
+    /* max-width: 350px; */
+    padding: 20px;
+    user-select: none;
+    /* border: 10px solid #0617ff; */
+}
+.t-b-img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.t-b-img::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+
+}
+.t-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    /* filter: grayscale(1); */
+}
+.t-b-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.t-b-text strong{
+    color: #919191;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.t-b-text span{
+    color: #919191;
+    font-size: 0.9rem;
+
+}
+.team-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.team-social a{
+    margin: 0px 10px;
+    color: rgb(19, 20, 20);
+    font-size: 0.9rem;
+    transition: all ease 0.5s;
+}
+.team-social a:hover{
+    color: rgb(0, 151, 178);
+}
+
+.swiper{
+    max-width: 745px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.swiper-slide{
+    width: 300px !important;
+    opacity: 0.2;
+    margin: 50px 0px;
+    margin-top: 0px;
+}
+.swiper-slide-active{
+    opacity: 1;
+    color: rgb(0, 151, 178);
+}
+
+  
+  /* MakeDiference styles */
+  .MakeDiference {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 25%;
+    padding-left: 25%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .DiferenceText {
+    font-size: 2rem;
+    color: #FFFF;
+  }
+  
+  /* FormArea styles */
+  .FormArea {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .ContactUs {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .form-data {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .input-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-field {
+    margin-top: 1rem;
+  }
+  
+  /* Footer styles */
+  .Footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .FolowUs,
+  .SocialMediaIcons {
+    margin-bottom: 1rem;
+  }
+  
+  .FollowUsText {
+    font-size: 1.5rem;
+  }
+  
+  .IconsText {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  
+  /* EnterpriseInformation styles */
+  .EnterpriseInformation {
+    display: flex;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.headerFull {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.WebSiteName {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 151, 178);
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    /* color: white; */
+}
+
+/* Breve descrição Styles */
+.Who {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.WhatDo {
+    text-align: center;
+}
+
+/* Informations Styles */
+.InformationTittle {
+    text-align: center;
+}
+
+.InformationText {
+    text-align: justify;
+}
+
+.InformationImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Plans Styles */
+.Plans {
+    padding: 20px;
+}
+
+.PlansMaintittle {
+    text-align: center;
+}
+
+.FreePlan,
+.PremiumPlan {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.IncludeTittle {
+    text-align: center;
+}
+
+.IncludeDescription {
+    text-align: center;
+}
+
+.Price {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.SignButton {
+    display: block;
+    margin: 10px auto;
+}
+
+/* ExplanationVideo Styles */
+.TittleExplanation {
+    text-align: center;
+}
+
+.ImageVideo {
+    display: block;
+    margin: 0 auto;
+}
+
+/* MakeDiference Styles */
+.DiferenceText {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* FormArea Styles */
+.ContactUs {
+    text-align: center;
+}
+
+.form-data {
+    margin-top: 20px;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+.input-field label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.submit-field input[type="submit"] {
+    background-color: rgb(0, 151, 178);
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer Styles */
+.Footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.FolowUs {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.SocialMediaIcons {
+    text-align: center;
+}
+
+.SocialMediaIcons a {
+    color: white;
+    margin: 0 5px;
+}
+
+/* EnterpriseInformation Styles */
+.EnterpriseInformation {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.InfoTittle {
+    margin-bottom: 10px;
+}
+
+.AlimentraPlusInfoDescription {
+  /* margin-left: 45rem; */
+    margin-top: 10px;
+}
+.DirectLinkLogIn{
+  text-decoration: none;
+  color: #fff;
+}
+
+.Rights {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .headerFull {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .MakeDiference {
+        margin-top: 50px;
+    }
+
+    .DiferenceText {
+        font-size: 1.2rem;
+    }
+
+    .InformationImage {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .headerFull {
+        padding: 10px;
+    }
+
+    .InformationImage {
+        max-width: 100%;
+    }
+}
