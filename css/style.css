@@ -41,6 +41,11 @@
         align-items: center;
     }
 
+    .logo_principal{
+        height: auto;
+        width: 10em;
+    }
+
     nav {
         margin: 0 40px;
     
@@ -761,8 +766,10 @@ main.cards section.card.about {
 }
 
 .Rights {
-  clear: both;
-  text-align: center;
+    margin-left: 13em;
+    margin-top: 3em;
+    clear: both;
+    text-align: center;
 }
 
 /* Responsive styles */
@@ -862,6 +869,11 @@ main.cards section.card.about {
     .leftHeaderContainer {
         display: flex;
         align-items: center;
+    }
+
+    .logo_principal{
+        height: auto;
+        width: 15em;
     }
 
     nav {
